@@ -19,7 +19,7 @@ o	Smooth animations with tw-animate-css
 •	Database & Backend
 o	PostgreSQL database hosted on Neon
 o	Prisma ORM for robust, type-safe database operations
-________________________________________
+
 <h2>Tech Stack </h2>
 Layer	Technology
 Frontend	Next.js, React, TypeScript, Tailwind CSS
@@ -28,11 +28,11 @@ Database	PostgreSQL (Neon)
 Maps & Visualization	react-globe.gl, MapTiler API
 File Upload	UploadThing
 Authentication	OAuth (Google & GitHub)
-________________________________________
-<h1>Live Demo </h1>Live Demo
+
+<h1> Live Demo </h1>
 Access the deployed app here:
-<b> https://go-traveler-app.vercel.app  </b>
-________________________________________
+ https://go-traveler-app.vercel.app  
+
 <h2> Installation & Local Development </h2>
 1.	Clone the repository
 git clone https://github.com/<your-username>/go-traveler.git
@@ -54,7 +54,7 @@ npx prisma generate
 5.	Run development server
 npm run dev
 6.	Visit http://localhost:3000 in your browser.
-________________________________________
+
 <h2> Project Structure </h2>
 go-traveler/
 │
@@ -69,8 +69,8 @@ go-traveler/
 ├─ package.json
 ├─ next.config.ts
 └─ README.md
-________________________________________
-<h2>>Security & Best Practices </h2
+
+<h2> Security & Best Practices </h2
 •	ESLint & Prettier configured for clean code
 
 •	Type-safe database queries with Prisma
@@ -78,7 +78,7 @@ ________________________________________
 •	NEXTAUTH_URL properly set for production OAuth
 
 •	ESLint disabled during build to prevent deployment failures
-________________________________________
+
 Contribution
 Contributions are welcome!
 1.	Fork the repository
@@ -90,4 +90,4 @@ Contributions are welcome!
 4.	Push to the branch (git push origin feature/my-feature)
 
 5.	Open a Pull Request
-________________________________________
+
