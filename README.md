@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
-
-First, run the development server:
-
-```bash
+<h2>Features</h2>
+•	User Authentication
+o	Sign in with Google or GitHub
+o	Secure session management with NextAuth.js
+•	Trip Management
+o	Create, update, and delete trips
+o	Add locations with latitude & longitude
+o	Manage trip itineraries
+•	Interactive Map & Globe
+o	Visualize trips dynamically with react-globe.gl
+o	Zoom, pan, and explore all your trip locations
+•	Image Uploads
+o	Upload trip images using UploadThing
+o	Supports secure remote storage and optimized delivery
+•	Responsive Design
+o	Mobile-first with Tailwind CSS
+o	Smooth animations with tw-animate-css
+•	Database & Backend
+o	PostgreSQL database hosted on Neon
+o	Prisma ORM for robust, type-safe database operations
+________________________________________
+<h2>Tech Stack </h2>
+Layer	Technology
+Frontend	Next.js, React, TypeScript, Tailwind CSS
+Backend	Next.js API Routes, NextAuth.js, Prisma
+Database	PostgreSQL (Neon)
+Maps & Visualization	react-globe.gl, MapTiler API
+File Upload	UploadThing
+Authentication	OAuth (Google & GitHub)
+________________________________________
+<h1>Live Demo </h1>Live Demo
+Access the deployed app here:
+<b> https://go-traveler-app.vercel.app  </b>
+________________________________________
+<h2> Installation & Local Development </h2>
+1.	Clone the repository
+git clone https://github.com/<your-username>/go-traveler.git
+cd go-traveler
+2.	Install dependencies
+npm install
+3.	Setup environment variables (create .env file):
+DATABASE_URL="postgresql://<user>:<password>@<host>/<db>?sslmode=require"
+AUTH_GOOGLE_ID="your-google-client-id"
+AUTH_GOOGLE_SECRET="your-google-client-secret"
+AUTH_GITHUB_ID="your-github-client-id"
+AUTH_GITHUB_SECRET="your-github-client-secret"
+AUTH_SECRET="your-random-secret-key"
+NEXTAUTH_URL="http://localhost:3000"
+UPLOADTHING_TOKEN="your-uploadthing-token"
+NEXT_PUBLIC_MAPTILER_KEY="your-maptile-key"
+4.	Generate Prisma client
+npx prisma generate
+5.	Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+6.	Visit http://localhost:3000 in your browser.
+________________________________________
+<h2> Project Structure </h2>
+go-traveler/
+│
+├─ prisma/          # Prisma schema & migrations
+├─ src/
+│  ├─ app/          # Next.js pages & layouts
+│  ├─ components/   # Reusable UI components
+│  ├─ api/          # API routes
+│  ├─ lib/          # Utilities & helpers
+│  └─ styles/       # Tailwind CSS & global styles
+├─ public/          # Static assets
+├─ package.json
+├─ next.config.ts
+└─ README.md
+________________________________________
+<h2>>Security & Best Practices </h2
+•	ESLint & Prettier configured for clean code
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+•	Type-safe database queries with Prisma
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+•	NEXTAUTH_URL properly set for production OAuth
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+•	ESLint disabled during build to prevent deployment failures
+________________________________________
+Contribution
+Contributions are welcome!
+1.	Fork the repository
 
-## Learn More
+2.	Create your feature branch (git checkout -b feature/my-feature)
 
-To learn more about Next.js, take a look at the following resources:
+3.	Commit your changes (git commit -am 'Add feature')
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.	Push to the branch (git push origin feature/my-feature)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5.	Open a Pull Request
+________________________________________
